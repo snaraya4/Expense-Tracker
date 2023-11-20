@@ -1,5 +1,11 @@
 {
   "devDependencies": {
     "gh-pages": "^6.1.0"
+  },
+  "scripts": {
+    "build": "npm run build-client && npm run build-server",
+    "build-client": "npm --prefix ./client run build",
+    "build-server": "tsc" 
   }
+  
 }
